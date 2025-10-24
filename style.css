@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #cad0da;
+  color: #025297;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  position: fixed;
+  width: 100%;
+  background: rgba(13, 17, 23, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f2f7f8;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #e6edf3;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #58a6ff;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0cddec, #161b22);
+  text-align: center;
+  padding: 0 10%;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #e6edf3;
+}
+.hero h1 span {
+  color: #beed5f;
+}
+.hero h2 {
+  color: #fdfeff;
+  margin-top: 10px;
+}
+.hero p {
+  margin: 20px 0;
+  color: #c9d1d9;
+  max-width: 600px;
+}
+.btn {
+  display: inline-block;
+  background: #feffff;
+  color: #3c82ec;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #f78166;
+  color: #fff;
+}
+
+/* About */
+.about, .projects, .contact {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.about h2, .projects h2, .contact h2 {
+  color: #02203e;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  color: #01070e;
+}
+
+/* Projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.project-card {
+  background: #161b22;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact */
+.contact a {
+  color: #177ef5;
+  text-decoration: none;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #161b22;
+  color: #9ea7b8;
+}
+
+  
